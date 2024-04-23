@@ -3,9 +3,9 @@ name: Reusable Workflow
 # trigger from other workflows
 on:
   workflow_call:
-
-jobs: 
-
+permissions:
+  contents: read
+jobs:
   test:
     runs-on: ubuntu-latest
 
